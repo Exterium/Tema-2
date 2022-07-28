@@ -1,0 +1,23 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class FunctionMain {
+
+    public static void main(String[] args) {
+
+        System.out.println("Bienvenido a fruterias Heredia");
+        vatCalculus();
+    }
+
+
+    static void vatCalculus(){
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("A cuanto esta el kilo de melones primo?");
+        double price = scanner.nextDouble();
+        double vatPrice = price + price * 0.21;
+        System.out.println("El kilo melones te sale a " + vatPrice + " payo.");
+
+    }
+}
